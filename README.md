@@ -1,4 +1,51 @@
-# Getting Started with Create React App
+Obejtivo do projeto
+{
+    O projeto é um loja online voltado a moda
+}
+
+Objetivo do desenvolvimento
+{
+    O projeto desenvolvido utilizou o conceito CSS in JS,  Styled components.
+}
+Instalações
+{
+    npm install styled-compenents
+    npm i styled-components  //para ts     
+    vscode-styled-components //extensão
+    npm install react-icons --save
+}
+API utilizada
+{
+    https://fakestoreapi.com/products
+}
+
+Arquivos criados
+{
+    1 - App
+    2 - Style
+        2.1 GlobalStyled
+    3 - Components
+        3.1 - Header 
+        3.2 - Cards  
+        3.3 - CardList
+        3.4 - Dados
+
+
+
+
+}
+
+Funçoes de cada Aequivos criados
+{
+    1 - Importando o GlobalStyled, Header, Cards e fazendo integração com API
+    2 - Estilos Globais
+    3.1 - Componente apresentando o NavBar na tela
+    3.2 - Componente apresentando o card com imagem e informações na tela
+    3.3 - Estilizando os cards, deixando responsivos utilizando o flex-box
+    4  - Tipagem dos produtos
+}
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -43,4 +90,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
