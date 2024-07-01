@@ -36,7 +36,7 @@ export const Divbutton = styled.div`
 // `
 export const Buttonlogin = styled.button`
     width: 60px;
-    padding: 2px;
+    padding: 5px;
     border-radius: 5px;
     border: none;
     background-color: green;
@@ -57,7 +57,7 @@ export const Buttonlogin = styled.button`
 
 export const Buttoncarrinho = styled.button`
     width: 80px;
-    padding: 2px;
+    padding: 5px;
     border-radius: 5px;
     border: none;
     background-color: orange;
