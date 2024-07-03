@@ -2,6 +2,7 @@ import { TipagemCards } from "../Dados/Dados";
 import * as S from "./Styled"
 import { IoCartOutline} from "react-icons/io5";
 
+
 // Definindo a interface Product
 interface ProductProps {
   product: TipagemCards;

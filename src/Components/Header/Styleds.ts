@@ -34,12 +34,15 @@ export const Divbutton = styled.div`
 //     justify-items: center;
 
 // `
-export const Buttonlogin = styled.button`
-    width: 60px;
+interface ButtonloginPros{
+    btnEntrar: boolean
+}
+export const Buttonlogin = styled.button<ButtonloginPros>`
+    width: 70px;
     padding: 5px;
     border-radius: 5px;
     border: none;
-    background-color: green;
+    background-color: ${props => props.btnEntrar ? 'red' : 'green'};
     color: #ffffff;
 
     display: flex;
@@ -47,11 +50,10 @@ export const Buttonlogin = styled.button`
     justify-content: center;
     gap: .2rem;
     
-    /* svg{
-        display: flexbox;
-        align-items: center;
-    } */
-
+    transition: opacity 0.3s ease;
+    &:hover{
+        opacity: .7;
+    }
 `
 
 
@@ -67,4 +69,10 @@ export const Buttoncarrinho = styled.button`
     align-items: center;
     justify-content: center;
     gap: .2rem;
+
+    transition: opacity 0.3s ease;
+
+    &:hover{
+    opacity: .7;
+   }
 `
