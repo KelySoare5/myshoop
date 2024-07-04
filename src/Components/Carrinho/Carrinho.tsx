@@ -1,9 +1,14 @@
 import React from "react";
 import * as S from "./styled";
 
-export const Carrinho:React.FC = () => {
+interface CarrinhoProps {
+    showCar: boolean;
+}
+
+export const Carrinho:React.FC<CarrinhoProps> = ({showCar}) => {
+
     return(
-        <S.Aside>
+        <S.Aside showCar={showCar}>
             <S.Titulo>
                 Carrinho
             </S.Titulo>

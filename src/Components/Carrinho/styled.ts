@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const Aside = styled.aside`
+interface ConteinerProps{
+    showCar: boolean;
+}
+export const Aside = styled.aside<ConteinerProps>`
     background-color: #ffffff;
     position: fixed;
     top: 0;
-    right: 0;
+    right: ${(props) => props.showCar ? '0' : '-350px'};
     height: 100vh;
-    width: 50px;
+    width: 350px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
     
 `

@@ -24,7 +24,7 @@ export const Navbar:React.FC = () => {
     return(
         <>
         <S.Header>
-        <Carrinho/>
+            {/* Passando uma propriedade no componente carrinho */}
             <S.Divconteudos>
                 <S.Titulo>
                     MyShoop
@@ -44,7 +44,7 @@ export const Navbar:React.FC = () => {
                             )}
                     </S.Buttonlogin>
 
-                <S.Buttoncarrinho onClick={(showCar) => {
+                <S.Buttoncarrinho onClick={() => {
                     setShowCar(!showCar)
                 }}>
                     Carrinho
@@ -53,6 +53,7 @@ export const Navbar:React.FC = () => {
                 </S.Divbutton>
                 
             </S.Divconteudos>
+            <Carrinho showCar={showCar }/> 
         </S.Header>
         </>
     )
