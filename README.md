@@ -29,6 +29,7 @@ Arquivos criados
         3.2 - Cards  
         3.3 - CardList
         3.4 - Dados
+        3.5 - Carrinho
 
 
 
@@ -42,7 +43,8 @@ Funçoes de cada Aequivos criados
     3.1 - Componente apresentando o NavBar na tela
     3.2 - Componente apresentando o card com imagem e informações na tela
     3.3 - Estilizando os cards, deixando responsivos utilizando o flex-box
-    4  - Tipagem dos produtos
+    3.4 - Tipagem dos produtos
+    3.5 - Aba lateral que abri ao aberta no botão de carrinho
 }
 
 <!-- # Getting Started with Create React App

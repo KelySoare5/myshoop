@@ -3,10 +3,13 @@ import * as S from "./Styleds";
 import { FiLogIn } from "react-icons/fi";
 import { IoCartOutline } from "react-icons/io5";
 import { MdOutlineLogout } from "react-icons/md";
+import { Carrinho } from "../Carrinho/Carrinho";
+
 
 export const Navbar:React.FC = () => {
 
-
+    //Mudar o estado para aparecer o Conteiner do carrinho
+    const [showCar, setShowCar] = useState(false)
 
     // Define um estado para controlar a condição
     const [btnEntrar, setBtnEntrar] = useState(false);
@@ -21,6 +24,7 @@ export const Navbar:React.FC = () => {
     return(
         <>
         <S.Header>
+        <Carrinho/>
             <S.Divconteudos>
                 <S.Titulo>
                     MyShoop
@@ -40,7 +44,9 @@ export const Navbar:React.FC = () => {
                             )}
                     </S.Buttonlogin>
 
-                <S.Buttoncarrinho>
+                <S.Buttoncarrinho onClick={(showCar) => {
+                    setShowCar(!showCar)
+                }}>
                     Carrinho
                     <IoCartOutline />
                 </S.Buttoncarrinho>
