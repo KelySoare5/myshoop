@@ -11,9 +11,11 @@ export const Aside = styled.aside<ConteinerProps>`
     height: 100vh;
     width: 350px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+
+    transition: right .5s
     
 `
 export const Titulo = styled.h1`
-
+    padding: 20px 10px;
 ` 
 

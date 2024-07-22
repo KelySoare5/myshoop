@@ -13,6 +13,7 @@ Instalações
     npm i styled-components  //para ts     
     vscode-styled-components //extensão
     npm install react-icons --save
+    npm install redux
 }
 API utilizada
 {
@@ -30,6 +31,10 @@ Arquivos criados
         3.3 - CardList
         3.4 - Dados
         3.5 - Carrinho
+    4 - redux
+        4.1 - userReducer
+        4.2 - root-reducer
+        4.3 - store
 
 
 
@@ -45,6 +50,9 @@ Funçoes de cada Aequivos criados
     3.3 - Estilizando os cards, deixando responsivos utilizando o flex-box
     3.4 - Tipagem dos produtos
     3.5 - Aba lateral que abri ao aberta no botão de carrinho
+    4.1 - A pasta contém informações do usuário
+    4.2 - Junção de todos os reducer da aplicação
+    4.3 - Criando um armazenamento baseado no rootReducer
 }
 
 <!-- # Getting Started with Create React App

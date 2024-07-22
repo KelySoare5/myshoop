@@ -4,10 +4,15 @@ import { FiLogIn } from "react-icons/fi";
 import { IoCartOutline } from "react-icons/io5";
 import { MdOutlineLogout } from "react-icons/md";
 import { Carrinho } from "../Carrinho/Carrinho";
+import { useDispatch, useSelector } from "react-redux";
+import { RootReducer } from "../../redux/root-reducer";
 
 
 export const Navbar:React.FC = () => {
-
+    //Selecionando o estado que esta guardado dentro do reducer
+    const { user } = useSelector((rootReducer: RootReducer) => rootReducer.userReducer)
+    
+    const dispatch = useDispatch()
     //Mudar o estado para aparecer o Conteiner do carrinho
     const [showCar, setShowCar] = useState(false)
 
@@ -19,6 +24,31 @@ export const Navbar:React.FC = () => {
         setBtnEntrar(!btnEntrar);
     };
 
+    
+    const handleUserAuth = () =>{
+        //usuario nao esta logado
+        if (user === null){
+            //dispachar de login para logout
+            dispatch({
+                type: "user/login",
+                payload: {
+                    name: "ks",
+                    email: "ks@gmail.com"
+                }
+            })
+        } else {
+            dispatch({
+                type: "user/logout",
+            })
+        }
+        console.log(user)
+        
+    }
+
+    const functBtnLogin = () =>{
+        btnSairEntrar()
+        handleUserAuth()
+    }
         
     // const btnEntrar = false
     return(
@@ -31,14 +61,14 @@ export const Navbar:React.FC = () => {
                 </S.Titulo>
 
                 <S.Divbutton>
-                    <S.Buttonlogin btnEntrar={btnEntrar} onClick={btnSairEntrar}>
+                    <S.Buttonlogin btnEntrar={btnEntrar} onClick={functBtnLogin}>
                         {btnEntrar ? (
                             <>
-                            Sair 
+                            Logout
                             <MdOutlineLogout />
                             </>)  : (
                             <>
-                            Entrar 
+                            Login
                             <FiLogIn />
                             </>
                             )}
