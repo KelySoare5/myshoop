@@ -19,7 +19,7 @@ export const CardsList: React.FC = () => {
           const dados: TipagemCards[] = await resposta.json();
           //Atribuindo os dados da API na variavel
           setProdutos(dados)
-          console.log(dados)
+          
         }
         catch(erro) {
           console.log("Erro identificado: ", erro)

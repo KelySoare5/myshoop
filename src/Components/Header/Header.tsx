@@ -80,9 +80,10 @@ export const Navbar:React.FC = () => {
                     Carrinho
                     <IoCartOutline />
                 </S.Buttoncarrinho>
+
                 </S.Divbutton>
-                
             </S.Divconteudos>
+            
             <Carrinho showCar={showCar }/> 
         </S.Header>
         </>

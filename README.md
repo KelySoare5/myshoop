@@ -32,9 +32,10 @@ Arquivos criados
         3.4 - Dados
         3.5 - Carrinho
     4 - redux
-        4.1 - userReducer
+        4.1 - User
         4.2 - root-reducer
         4.3 - store
+        4.4 - Cart
 
 
 
@@ -53,6 +54,7 @@ Funçoes de cada Aequivos criados
     4.1 - A pasta contém informações do usuário
     4.2 - Junção de todos os reducer da aplicação
     4.3 - Criando um armazenamento baseado no rootReducer
+    4.4 - Pasta que contém informação do carrinho
 }
 
 <!-- # Getting Started with Create React App
