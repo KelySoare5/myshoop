@@ -52,13 +52,27 @@ export const Preco = styled.span`
 export const Avaliacao = styled.h4`
 
 `
-export const BtnCarrinho = styled.button`
+export const BtnAddCarrinho = styled.button`
     width: 100%;
     margin-top: 1rem;
     border-radius: 5px;
     border: none;
     background-color: blue;
     color: #ffffff;
+    padding: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+`
+export const BtnRemoverCarrinho = styled.button`
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: violet;
+    color: #000000;
     padding: 3px;
 
     display: flex;
