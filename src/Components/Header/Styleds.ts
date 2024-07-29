@@ -50,10 +50,6 @@ export const Buttonlogin = styled.button<ButtonloginPros>`
     justify-content: center;
     gap: .2rem;
     
-    transition: opacity 0.3s ease;
-    &:hover{
-        opacity: .7;
-    }
 `
 
 
@@ -70,9 +66,5 @@ export const Buttoncarrinho = styled.button`
     justify-content: center;
     gap: .2rem;
 
-    transition: opacity 0.3s ease;
 
-    &:hover{
-    opacity: .7;
-   }
 `

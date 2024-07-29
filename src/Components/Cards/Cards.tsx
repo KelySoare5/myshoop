@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { TipagemCards } from "../Dados/Dados";
 import * as S from "./Styled"
 import { IoCartOutline} from "react-icons/io5";
-import { RootReducer, rootReducer } from "../../redux/root-reducer";
+import { RootReducer } from "../../redux/root-reducer";
 
 
 // Definindo a interface Product
@@ -14,6 +14,7 @@ export const Cards: React.FC<ProductProps> = ({product}) =>{
 
     const { cart } = useSelector((rootReducer: RootReducer) => rootReducer.cartReducer)
     //Verificando se o produto esta no carrinho ou não
+    //Se o encontrar o produto, returna o produto que ele encontrou, se nao encontrar, returna undefined
     const isProductOnCart = cart.find((productOnCart) => product.id === productOnCart.id) !== undefined
 
     const dispatch = useDispatch()

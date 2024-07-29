@@ -65,6 +65,10 @@ export const BtnAddCarrinho = styled.button`
     align-items: center;
     justify-content: center;
     gap: .2rem;
+    &:hover{
+            filter: brightness(1.5);
+            transition: filter 0.3s;
+        }
 `
 export const BtnRemoverCarrinho = styled.button`
     width: 100%;
@@ -79,4 +83,5 @@ export const BtnRemoverCarrinho = styled.button`
     align-items: center;
     justify-content: center;
     gap: .2rem;
+
 `

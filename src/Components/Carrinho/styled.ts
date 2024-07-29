@@ -16,6 +16,29 @@ export const Aside = styled.aside<ConteinerProps>`
     
 `
 export const Titulo = styled.h1`
-    padding: 20px 10px;
+    padding: 1rem;
 ` 
+export const CartProductList = styled.ul`
+    padding: 1rem;
+    list-style: none;
+    gap: 1rem;
+`
+export const CartProducttem = styled.li`
+    padding: 1rem 0;
+`
+export const CartTitulo = styled.p`
+    font-weight: bold;
+`
+export const TotalCart = styled.p`
+    padding: 2rem 1rem;
+    font-weight: bold;
+`
+export const BtnRemover = styled.button`
+    margin-left: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: violet;
+    color: #000000;
+    padding: 4px;
 
+`

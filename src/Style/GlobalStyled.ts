@@ -6,5 +6,16 @@ export const StyledGlobal = createGlobalStyle`
         padding: 0px;
         box-sizing: border-box;
     }
+
+    button{
+        cursor: pointer;
+        transition: cursor 0.3s;
+
+        &:hover{
+            filter: brightness(1.2);
+            transition: filter 0.3s;
+        }
+    }
+    
     
 `
