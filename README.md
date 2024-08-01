@@ -14,6 +14,7 @@ Instalações
     vscode-styled-components //extensão
     npm install react-icons --save
     npm install redux
+    npm install @reduxjs/toolkit
 }
 API utilizada
 {
