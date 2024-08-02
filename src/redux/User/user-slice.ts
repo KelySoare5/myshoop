@@ -22,12 +22,16 @@ export const userSlice = createSlice({
     //reducer é como se fosse as action, altera os estados
     //Reducer é um objeto que cada atributo é um metodo e esses metodos recebe uma função
     reducers: {
+        //Primeira Action: login
         login: (state, action) => {
             state.user = action.payload
         },
+        //Segunda Action: logout
         logout: (state, action) => {
             state.user = null
         }
 
     }
 })
+
+export const {login, logout} = userSlice.actions

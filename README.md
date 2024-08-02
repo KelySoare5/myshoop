@@ -34,9 +34,13 @@ Arquivos criados
         3.5 - Carrinho
     4 - redux
         4.1 - User
+            4.1.1 -reducer
+            4.1.2 - user-slice
         4.2 - root-reducer
         4.3 - store
         4.4 - Cart
+            4.4.1 - cart-reducer
+            4.4.2 - cart-slice
 
 
 
@@ -53,9 +57,19 @@ Funçoes de cada Aequivos criados
     3.4 - Tipagem dos produtos
     3.5 - Aba lateral que abri ao aberta no botão de carrinho
     4.1 - A pasta contém informações do usuário
+        4.1.1 - Abordagem antiga com o conceito de reducer
+        4.1.2 - Nova abordagem usando o slices
     4.2 - Junção de todos os reducer da aplicação
     4.3 - Criando um armazenamento baseado no rootReducer
     4.4 - Pasta que contém informação do carrinho
+        4.4.1 - Abordagem antiga com o conceito de reducer
+        4.4.2 - Nova abordagem usando o slices
+}
+Atualizações da forma antiga e nova{
+    No arquivo 4.3, a função store chamava o metodo createStore, no entanto, essa abordagem é considerada ultrapassada.
+    Nessa nova abordagem, o Slices é quem guarda e altera o estado, enquanto que, o reducer recebi o conceito das actions.
+    nos arquivos.
+    Nos arquivos 4.1.1 e 4.4.1 é é usado o reducer, onde é necessario adicionar o action type e payload, atribuir tipagem e valos. Nos arquivos 4.1.2 e 4.4.2, utilizando a nova abordagem, não é necessario o return e os nomes dos atribitos do reducer é o valor do type.
 }
 
 <!-- # Getting Started with Create React App

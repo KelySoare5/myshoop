@@ -3,6 +3,7 @@ import { TipagemCards } from "../Dados/Dados";
 import * as S from "./Styled"
 import { IoCartOutline} from "react-icons/io5";
 import { RootReducer } from "../../redux/root-reducer";
+import { addProduct, removeProduct } from "../../redux/Cart/cart-slice";
 
 
 // Definindo a interface Product
@@ -18,23 +19,30 @@ export const Cards: React.FC<ProductProps> = ({product}) =>{
     const isProductOnCart = cart.find((productOnCart) => product.id === productOnCart.id) !== undefined
 
     const dispatch = useDispatch()
-    
-    function handleRemoveProductToCard(){
-        dispatch({
-            type: "cart/remove-product",
-            payload: product,
-        })
-    }
-
+    //Forma antiga
+    // function handleRemoveProductToCard(){
+    //     dispatch({
+    //         type: "cart/remove-product",
+    //         payload: product,
+    //     })
+    // }
     function handleAddProductToCard(){
         //Despachar a action de add o produto ao carrinho
-        dispatch({
-            type: "cart/add-product",
-            payload: product
-
-        })
-        console.log(product.title)
+        dispatch(addProduct(product))
     }
+    function handleRemoveProductToCard(){
+        dispatch(removeProduct(product))
+    }
+    //Forma antiga
+    // function handleAddProductToCard(){
+    //     //Despachar a action de add o produto ao carrinho
+    //     dispatch({
+    //         type: "cart/add-product",
+    //         payload: product
+
+    //     })
+    //     console.log(product.title)
+    // }
 
     return(
         <S.StyledAside>

@@ -2,6 +2,7 @@ import React from "react";
 import * as S from "./styled";
 import { useDispatch, useSelector } from "react-redux";
 import { RootReducer } from "../../redux/root-reducer";
+import { removeProduct } from "../../redux/Cart/cart-slice";
 
 
 interface CarrinhoProps {
@@ -34,7 +35,7 @@ export const Carrinho:React.FC<CarrinhoProps> = ({showCar}) => {
                         ${product.price}
 
                         <S.BtnRemover onClick={() => 
-                            dispatch({type: "cart/remove-product", payload: product})
+                            dispatch(removeProduct(product))
                         }>Remover</S.BtnRemover>
                         </S.CartProducttem>
 

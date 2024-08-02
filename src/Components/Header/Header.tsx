@@ -6,6 +6,7 @@ import { MdOutlineLogout } from "react-icons/md";
 import { Carrinho } from "../Carrinho/Carrinho";
 import { useDispatch, useSelector } from "react-redux";
 import { RootReducer } from "../../redux/root-reducer";
+import { login, logout } from "../../redux/User/user-slice";
 
 
 export const Navbar:React.FC = () => {
@@ -28,18 +29,30 @@ export const Navbar:React.FC = () => {
     const handleUserAuth = () =>{
         //usuario nao esta logado
         if (user === null){
-            //dispachar de login para logout
-            dispatch({
-                type: "user/login",
-                payload: {
+            //Mudando/dispachando a ação de login para logout
+            dispatch(
+                login({
                     name: "ks",
                     email: "ks@gmail.com"
-                }
-            })
+                })
+            )
+            //forma antiga
+            // dispatch({
+            //     type: "user/login",
+            //     payload: {
+            //         name: "ks",
+            //         email: "ks@gmail.com"
+            //     }
+            // })
         } else {
-            dispatch({
-                type: "user/logout",
-            })
+            //mundando/dispachando o logout 
+            dispatch(
+                logout({}) //objeto null
+            )
+            //Forma antiga
+            // dispatch({
+            //     type: "user/logout",
+            // })
         }
         console.log(user)
         
